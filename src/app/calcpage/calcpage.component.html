@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <div class="title">
+            CALCULATOR
+            <br><br>
+        </div>
+        <div class="main">
+    <label>ENTER 1st NUMBER</label>
+    <input class="input" type="text" [(ngModel)]="a">
+    <br><br>
+    <label>ENTER 2nd NUMBER</label>
+    <input class="input" type="text" [(ngModel)]="b">
+    <br><br><br>
+    <button class="button" (click)="add()">ADD</button>
+    <button class="button" (click)="sub()">SUBTRACT</button>
+    <button class="button" (click)="mul()">MULTIPLY</button>
+    <button class="button" (click)="div()">DIVIDE</button>
+    <button class="button" (click)="clear()">RESET</button>
+    <br><br><br>
+</div>
+<div class="last">
+    <label>ANSWER IS   </label>
+    <input class="ANSWER" type="text" value="{{res}}" disabled>
+</div>
+</body>
+</html>
